@@ -11,6 +11,8 @@ A production-grade FastAPI backend for an AR-enabled jewelry e-commerce platform
 - **Order Processing**: Full order lifecycle management with status tracking
 - **Payment Integration**: Razorpay payment gateway integration
 - **Reviews & Ratings**: Product review system with moderation
+- **Inventory Management**: Real-time stock tracking with low stock alerts
+- **Coupon System**: Flexible discount codes with validation and usage tracking
 
 ### 🔮 AR & 3D Capabilities
 
@@ -24,6 +26,10 @@ A production-grade FastAPI backend for an AR-enabled jewelry e-commerce platform
 
 - **JWT Authentication**: Secure token-based authentication
 - **Role-Based Access Control (RBAC)**: Admin, user, and guest roles
+- **Two-Factor Authentication (2FA)**: TOTP-based 2FA support
+- **Password Reset**: Secure email-based password recovery
+- **Email Verification**: Account verification system
+- **Session Management**: Track and manage user sessions
 - **Rate Limiting**: Configurable request throttling
 - **Request Validation**: Comprehensive input validation
 - **Caching**: Redis-based caching for improved performance
@@ -35,6 +41,8 @@ A production-grade FastAPI backend for an AR-enabled jewelry e-commerce platform
 - **Email Notifications**: Order confirmations and updates
 - **Task Queue**: Background job processing
 - **Advanced Search**: Elasticsearch-powered product search
+- **Data Export**: CSV export for orders, products, analytics, and inventory
+- **Health Monitoring**: System health checks and service status monitoring
 
 ## 🚀 Tech Stack
 
