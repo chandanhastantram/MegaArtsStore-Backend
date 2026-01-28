@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend (excluding from backend repo)
+frontend/
+
+# Blender cache
+blender_scripts/__pycache__/
+*.blend1
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Uploads
+uploads/
+static/uploads/
