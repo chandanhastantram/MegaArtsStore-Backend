@@ -1,0 +1,143 @@
+.products-management {
+  max-width: 1400px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--gray-900);
+}
+
+.products-controls {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 300px;
+  padding: var(--space-md);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+}
+
+.filter-select {
+  padding: var(--space-md);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  min-width: 150px;
+}
+
+.products-table-container {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.products-table th {
+  text-align: left;
+  padding: var(--space-md);
+  background: var(--gray-50);
+  border-bottom: 2px solid var(--gray-200);
+  font-weight: 600;
+  color: var(--gray-700);
+  font-size: 0.875rem;
+}
+
+.products-table td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.875rem;
+}
+
+.product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.product-info h4 {
+  margin: 0 0 4px;
+  font-size: 0.875rem;
+  color: var(--gray-900);
+}
+
+.product-info p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--gray-600);
+}
+
+.stock-badge {
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.stock-in {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.stock-low {
+  background: #fed7aa;
+  color: #92400e;
+}
+
+.stock-out {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.action-buttons {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.icon-btn {
+  padding: var(--space-xs) var(--space-sm);
+  background: none;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.icon-btn:hover {
+  background: var(--gray-100);
+}
+
+.icon-btn.delete:hover {
+  background: #fee2e2;
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .products-controls {
+    flex-direction: column;
+  }
+  
+  .search-input {
+    min-width: 100%;
+  }
+}

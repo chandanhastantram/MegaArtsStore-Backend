@@ -1,0 +1,43 @@
+.recommendation-section {
+  margin: var(--space-3xl) 0;
+}
+
+.section-title {
+  margin: 0 0 var(--space-xl);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.skeleton-card {
+  height: 400px;
+  background: linear-gradient(
+    90deg,
+    var(--gray-200) 25%,
+    var(--gray-100) 50%,
+    var(--gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-lg);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+}

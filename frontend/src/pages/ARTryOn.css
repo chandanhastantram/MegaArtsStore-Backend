@@ -1,0 +1,24 @@
+.artry-on-page {
+  min-height: calc(100vh - 80px);
+  padding: var(--space-2xl);
+}
+
+.ar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ar-container h1 {
+  margin-bottom: var(--space-xl);
+}
+
+.ar-viewer {
+  background: var(--gray-100);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3xl);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

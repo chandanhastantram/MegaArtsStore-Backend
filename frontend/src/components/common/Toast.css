@@ -1,0 +1,136 @@
+.toast-container {
+  position: fixed;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: 400px;
+}
+
+.toast {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  min-width: 300px;
+}
+
+.toast-success {
+  border-left: 4px solid var(--emerald);
+}
+
+.toast-error {
+  border-left: 4px solid var(--coral);
+}
+
+.toast-warning {
+  border-left: 4px solid var(--gold);
+}
+
+.toast-info {
+  border-left: 4px solid var(--gold-light);
+}
+
+.toast-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.toast-success .toast-icon {
+  background: var(--emerald);
+  color: var(--white);
+}
+
+.toast-error .toast-icon {
+  background: var(--coral);
+  color: var(--white);
+}
+
+.toast-warning .toast-icon {
+  background: var(--gold);
+  color: var(--white);
+}
+
+.toast-info .toast-icon {
+  background: var(--gold-light);
+  color: var(--white);
+}
+
+.toast-content {
+  flex: 1;
+}
+
+.toast-message {
+  margin: 0;
+  font-size: 14px;
+  color: var(--black);
+  line-height: 1.4;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-600);
+  font-size: 16px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.toast-close:hover {
+  background: var(--gray-100);
+  color: var(--black);
+}
+
+.toast-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: currentColor;
+}
+
+.toast-success .toast-progress {
+  color: var(--emerald);
+}
+
+.toast-error .toast-progress {
+  color: var(--coral);
+}
+
+.toast-warning .toast-progress {
+  color: var(--gold);
+}
+
+.toast-info .toast-progress {
+  color: var(--gold-light);
+}
+
+@media (max-width: 640px) {
+  .toast-container {
+    left: var(--space-md);
+    right: var(--space-md);
+    max-width: none;
+  }
+  
+  .toast {
+    min-width: auto;
+  }
+}

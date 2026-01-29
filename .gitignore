@@ -22,8 +22,10 @@ env/
 .DS_Store
 Thumbs.db
 
-# Frontend (excluding from backend repo)
-frontend/
+# Frontend build/dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
 
 # Blender cache
 blender_scripts/__pycache__/

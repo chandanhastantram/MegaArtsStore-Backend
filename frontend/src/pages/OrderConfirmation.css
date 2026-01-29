@@ -1,0 +1,134 @@
+/* Order Confirmation Page */
+.order-confirmation-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.confirmation-container {
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Success Animation */
+.success-animation {
+  margin-bottom: 2rem;
+}
+
+.success-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 10px 40px rgba(16, 185, 129, 0.3);
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: white;
+}
+
+/* Title & Message */
+.confirmation-container h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem;
+}
+
+.confirmation-message {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0 0 2rem;
+  line-height: 1.6;
+}
+
+/* Order ID Display */
+.order-id-display {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: var(--bg-secondary);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.order-id-display .label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.order-id-display .value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+/* Confirmation Details */
+.confirmation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+.detail-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.detail-item p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+}
+
+/* Actions */
+.confirmation-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.confirmation-actions a {
+  width: 100%;
+}
+
+.confirmation-actions .btn {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .confirmation-container h1 {
+    font-size: 1.5rem;
+  }
+  
+  .success-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .success-icon {
+    font-size: 2.5rem;
+  }
+}

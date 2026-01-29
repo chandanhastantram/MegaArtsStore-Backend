@@ -1,0 +1,109 @@
+/* Size Guide */
+.size-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.size-guide-description {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+/* Size Chart Table */
+.size-chart-table {
+  overflow-x: auto;
+}
+
+.size-chart-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.size-chart-table th,
+.size-chart-table td {
+  padding: 0.875rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.size-chart-table th {
+  background: var(--bg-secondary);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.size-chart-table td {
+  font-size: 0.9375rem;
+}
+
+.size-chart-table tr:hover {
+  background: var(--bg-secondary);
+}
+
+/* Measurement Instructions */
+.measurement-instructions {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.measurement-instructions h4 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.measurement-instructions ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.measurement-instructions li {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+}
+
+.measurement-instructions li:last-child {
+  margin-bottom: 0;
+}
+
+/* Visual Guide */
+.visual-guide {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.1), rgba(232, 180, 184, 0.1));
+  border-radius: 12px;
+  border: 1px solid rgba(184, 134, 11, 0.2);
+}
+
+.visual-guide .guide-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.visual-guide p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.visual-guide strong {
+  color: var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .size-chart-table th,
+  .size-chart-table td {
+    padding: 0.625rem 0.5rem;
+    font-size: 0.8125rem;
+  }
+}

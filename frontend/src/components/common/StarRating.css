@@ -1,0 +1,79 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: default;
+  transition: all var(--transition-fast);
+}
+
+.star.interactive {
+  cursor: pointer;
+}
+
+.star-icon {
+  display: inline-block;
+  position: relative;
+  color: var(--gray-300);
+  transition: color var(--transition-fast);
+}
+
+.star.filled .star-icon {
+  color: var(--gold);
+}
+
+.star.partial .star-icon {
+  position: relative;
+}
+
+.star-half {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  color: var(--gold);
+}
+
+.star-empty {
+  color: var(--gray-300);
+}
+
+/* Sizes */
+.star-rating.small .star-icon {
+  font-size: 1rem;
+}
+
+.star-rating.medium .star-icon {
+  font-size: 1.25rem;
+}
+
+.star-rating.large .star-icon {
+  font-size: 1.5rem;
+}
+
+.rating-count {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  margin-left: var(--space-xs);
+}
+
+/* Interactive hover effect */
+.star-rating.interactive .star:hover .star-icon,
+.star-rating.interactive .star:hover ~ .star .star-icon {
+  color: var(--gold);
+}
+
+.star-rating.interactive .star:hover ~ .star .star-icon {
+  color: var(--gray-300);
+}
