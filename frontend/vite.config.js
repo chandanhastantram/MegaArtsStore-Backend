@@ -9,6 +9,14 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  build: {
+    rollupOptions: {
+      onwarn(warning, warn) {
+        // Suppress all warnings
+        return
+      },
+    },
+  },
   server: {
     port: 3000,
     proxy: {

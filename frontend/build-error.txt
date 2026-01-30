@@ -1,0 +1,46 @@
+﻿
+> frontend@0.0.0 build
+> vite build --mode production
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 60 modules transformed.
+node.exe : [31mΓ£ù[39m Build 
+failed in 199ms
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpe 
+   cified: ([31mΓ£ù[39m Build fai  
+  led in 199ms:String) [], RemoteE   
+ xception
+    + FullyQualifiedErrorId : Native 
+   CommandError
+ 
+[31merror during build:
+[31mCould not resolve 
+"./admin/pages/ProductsManagement" 
+from "src/App.jsx"[31m
+file: [36mC:/Users/chand/.gemini/Meg
+aArtsStore/frontend/src/App.jsx[31m
+    at getRollupError (file:///C:/Use
+rs/chand/.gemini/MegaArtsStore/fronte
+nd/node_modules/rollup/dist/es/shared
+/parseAst.js:400:41)
+    at error (file:///C:/Users/chand/
+.gemini/MegaArtsStore/frontend/node_m
+odules/rollup/dist/es/shared/parseAst
+.js:396:42)
+    at 
+ModuleLoader.handleInvalidResolvedId 
+(file:///C:/Users/chand/.gemini/MegaA
+rtsStore/frontend/node_modules/rollup
+/dist/es/shared/node-entry.js:21666:2
+4)
+    at file:///C:/Users/chand/.gemini
+/MegaArtsStore/frontend/node_modules/
+rollup/dist/es/shared/node-entry.js:2
+1626:26[39m
