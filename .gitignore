@@ -41,3 +41,6 @@ blender_scripts/__pycache__/
 # Uploads
 uploads/
 static/uploads/
+
+# Render
+.render/

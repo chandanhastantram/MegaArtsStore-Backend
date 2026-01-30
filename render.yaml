@@ -1,0 +1,16 @@
+services:
+  # Backend API Service
+  - type: web
+    name: megaartsstore-api
+    runtime: python
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT"
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: PORT
+        value: 8000
+      # Add your environment variables in Render dashboard:
+      # MONGODB_URI, JWT_SECRET_KEY, CLOUDINARY_CLOUD_NAME, etc.

@@ -76,3 +76,7 @@ def get_settings() -> Settings:
     Uses lru_cache to ensure settings are loaded only once.
     """
     return Settings()
+
+
+# Convenience export for direct import
+settings = get_settings()

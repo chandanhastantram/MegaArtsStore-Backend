@@ -47,6 +47,19 @@ def get_database():
     return _database
 
 
+class DatabaseProxy:
+    """Lazy proxy for database access - allows 'from app.database import db' syntax"""
+    def __getattr__(self, name):
+        return getattr(get_database(), name)
+    
+    def __getitem__(self, name):
+        return get_database()[name]
+
+
+# Proxy object that can be imported directly
+db = DatabaseProxy()
+
+
 def get_products_collection():
     """Get products collection"""
     return get_database()["products"]
